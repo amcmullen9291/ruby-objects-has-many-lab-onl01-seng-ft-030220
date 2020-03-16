@@ -6,7 +6,7 @@ attr_accessor :name, :artist, :genre
   def initialize(name, genre)
     @name = name
     @artist = artist
-    artist.song << self
+    artist.songs << self
   end 
   
   def artist_name
