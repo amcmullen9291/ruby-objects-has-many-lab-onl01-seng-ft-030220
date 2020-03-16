@@ -38,7 +38,7 @@ attr_accessor :name, :song
   # binding.pry
 
   def self.song_count
-    @@all.song.count
+    Artist.song.count
   end 
 
 end 
