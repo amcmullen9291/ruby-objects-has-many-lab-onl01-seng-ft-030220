@@ -4,7 +4,6 @@ attr_accessor :name, :post
 @@all = []
   def initialize(name)
     @name = name
-    # @make = song
     # @@all << self 
   end 
   
