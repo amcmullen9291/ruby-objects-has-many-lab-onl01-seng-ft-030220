@@ -1,5 +1,5 @@
 class Post
-attr_accessor :name, :artist, :genre
+attr_accessor :name, :author
 
 @@all = []
 
@@ -8,15 +8,15 @@ attr_accessor :name, :artist, :genre
     @@all << self
   end 
   
-  def artist_name
-    self.artist.name
+  def author_name
+    self.author.name
   end 
  
   def self.all 
       @@all
   end 
 
-  def songs(name, genre)
+  def posts(name, genre)
     @@all 
   end 
 
