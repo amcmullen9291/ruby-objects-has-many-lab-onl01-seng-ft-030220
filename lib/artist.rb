@@ -21,6 +21,10 @@ attr_accessor :name, :song
   def self.all 
     @@all
   end 
+  
+  def songs
+    @@all 
+  end
 
   def save
     @@all << self.uniq
