@@ -5,7 +5,7 @@ attr_accessor :name, :author
 
   def initialize(name, genre)
     @name = name
-    @author = auuthor
+    @author = author
     author.post << self
   end 
   
