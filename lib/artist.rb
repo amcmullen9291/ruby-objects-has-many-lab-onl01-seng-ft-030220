@@ -5,8 +5,7 @@ attr_accessor :name, :song
 
   def initialize(name, artist=nil)
     @name = name
-    @song = song
-    # @@all << self 
+    @@all << self 
   end 
   
   def add_song_by_name(name, genre) 
@@ -39,7 +38,7 @@ attr_accessor :name, :song
   end 
   
   def songs
-  song.all.select do |title| title.artist == self
+  Song.all.select do |title| title.artist == self
     end 
   end 
   
