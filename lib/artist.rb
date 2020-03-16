@@ -39,7 +39,7 @@ attr_accessor :name, :song
   end 
   
   def songs
-  song.all.select do |title| title.artist == self
+  Song.all.select do |title| title.artist == self
     end 
   end 
   
