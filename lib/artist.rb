@@ -29,7 +29,7 @@ attr_accessor :name, :song
     song.artist.name
   end 
 
-  def count
+  def self.count
     @@all.count 
   end 
   
