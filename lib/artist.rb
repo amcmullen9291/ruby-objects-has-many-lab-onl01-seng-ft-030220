@@ -23,7 +23,7 @@ attr_accessor :name, :song
   end 
   
   def songs
-    @@all 
+    song = song.new(name genre)
   end
 
   def save
