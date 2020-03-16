@@ -8,6 +8,10 @@ attr_accessor :name, :song
     @@all << self 
   end 
   
+  def self.all
+    @@all
+  end
+  
   def add_song_by_name(name, genre) 
     name= Song.new(name, genre)
     add_song(song)
