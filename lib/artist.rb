@@ -25,10 +25,6 @@ attr_accessor :name, :song
   #   song = song.new(name genre)
   # end
 
-  def save
-    @@all << self.uniq
-  end     
-
   def artist_name
     song.artist.name
   end 
