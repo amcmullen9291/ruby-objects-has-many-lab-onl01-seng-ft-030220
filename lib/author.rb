@@ -31,7 +31,7 @@ attr_accessor :name, :post
   end 
 
   def posts
-  Song.all.select do |title| title.author == self
+  Post.all.select do |title| title.author == self
     end 
   end 
   
