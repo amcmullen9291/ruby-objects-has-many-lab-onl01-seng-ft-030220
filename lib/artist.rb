@@ -30,7 +30,7 @@ attr_accessor :name, :song
   end 
 
   def self.count
-    @@all.count 
+    @@all.count.to_i
   end 
   
   def songs
