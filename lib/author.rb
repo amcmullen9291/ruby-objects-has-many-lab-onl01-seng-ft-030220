@@ -1,41 +1,44 @@
+require 'pry'
 class Author
 attr_accessor :name, :post
 
 @@all = []
-  def initialize(name)
+
+  def initialize(name, author=nil)
     @name = name
-    # @@all << self 
+    @@all << self 
   end 
   
-  def add_post_by_title(name) 
-    name= Post.new(name )
-    add_post(name)
-  end 
+  def self.all
+    @@all
+  end
 
   def add_post(post)
     post.author = self 
-    
   end
   
-  def self.all 
-    @@all
+  def add_post_by_name(name) 
+    name= Post.new(name)
+    add_post(name)
   end 
 
-  def save
-    @@all << self 
-  end     
+  # def songs
+  #   song = song.new(name genre)
+  # end
 
   def author_name
     post.author.name
   end 
 
-  def count
-    @@all.count 
-  end 
-
- def author_posts
-  post.all.select do |name| name.author == self
+  def posts
+  Song.all.select do |title| title.author == self
     end 
+  end 
+  
+  # binding.pry
+
+  def self.post_count
+    Post.all.count
   end 
 
 end 
