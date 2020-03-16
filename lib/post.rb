@@ -1,17 +1,25 @@
-class Post
-attr_accessor :name, :author
+class Song
+attr_accessor :name, :artist, :genre
 
-@@all = [] 
+@@all = []
 
-  def initialize(name, genre)
+  def initialize(name)
     @name = name
-    @author = author
-    author.post << self
+    @@all << self
   end 
   
-  def author_name
-    self.author.name
+  def artist_name
+    self.artist.name
   end 
+ 
+  def self.all 
+      @@all
+  end 
+
+  def songs(name, genre)
+    @@all 
+  end 
+
 
 end 
  
