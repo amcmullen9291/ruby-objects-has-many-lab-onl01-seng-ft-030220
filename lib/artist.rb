@@ -35,7 +35,7 @@ attr_accessor :name, :song
   end 
   
   def self.count()
-    song_count = @@all.count
+    song_count = @@all.length
   end 
 
 
