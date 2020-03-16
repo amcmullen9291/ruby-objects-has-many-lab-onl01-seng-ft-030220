@@ -14,7 +14,7 @@ attr_accessor :name, :artist, :genre
   end 
 
   def songs 
-  @@all 
+    @@all 
   end 
 
 end 
