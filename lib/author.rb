@@ -19,8 +19,8 @@ attr_accessor :name, :post, :author
   
   def add_post_by_title(name) 
     name= Post.new(name)
-    post.author = self 
-  end 
+    add_post(name)  
+    end 
 
   # def songs
   #   song = song.new(name genre)
