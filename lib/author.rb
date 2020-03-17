@@ -19,7 +19,7 @@ attr_accessor :name, :post
   
   def add_post_by_title(title) 
     name= Post.new(title)
-    add_post(post)
+    add_post(name)
   end 
 
   # def songs
