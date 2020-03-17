@@ -1,6 +1,6 @@
 require 'pry'
 class Author
-attr_accessor :name, :post, :author
+attr_accessor :name, :post
 
 @@all = []
 
