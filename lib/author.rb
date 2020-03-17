@@ -21,7 +21,6 @@ attr_accessor :name, :post, :author, :title
     name= Post.new(name)
     add_post(name)  
     # post.author = self 
-
     end 
 
   # def songs
