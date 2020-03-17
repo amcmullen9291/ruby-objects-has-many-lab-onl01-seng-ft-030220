@@ -14,12 +14,12 @@ attr_accessor :name, :post
   end
 
   def add_post(title)
-    song.artist = self 
+    post.author = self 
   end
   
-  def add_post_by_name(name) 
+  def add_post_by_author(name) 
     name= Post.new(name)
-    add_song(name)
+    add_post(name)
   end 
 
   # def songs
